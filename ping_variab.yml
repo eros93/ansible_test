@@ -1,0 +1,7 @@
+- name: Ping target
+  hosts: all
+  vars:
+    target: google.com
+  tasks:
+    - name: Ping {{ target }}
+      ansible.builtin.command: ping -c 1 {{ target }}
