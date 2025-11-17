@@ -1,0 +1,8 @@
+---
+- name: Ping google.com
+  hosts: all
+  gather_facts: no
+
+  tasks:
+    - name: Ping google.com
+      ansible.builtin.command: ping -c 1 google.com
